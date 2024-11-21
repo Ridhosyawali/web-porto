@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* navbar */
+
+nav {
+  background-color: black;
+  padding-inline: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .left-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+nav .left-nav img {
+  height: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: #eb374e;
+}
+
+nav .right-nav a {
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: #eb374e;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+  /* 
+  &:hover {
+    background-color: #000;
+    color: #eb374e;
+  } */
+}
+
+nav .right-nav .icon {
+  display: none;
+}
+
+footer {
+  display: flex;
+  background-color: #000;
+  padding: 8px;
+  color: #fff;
+  justify-content: center;
+}
+footer span {
+  color: #eb374e;
+}
+
+.form-container {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-self: center;
+  margin: 30px;
+
+  width: 500px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image img {
+  margin-top: 30px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding-inline: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.send-email button {
+  background-color: #eb374e;
+  font-size: 14px;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 8px 20px;
+  &:hover {
+    cursor: pointer;
+    background-color: #f5121d;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding-inline: 16px;
+  }
+
+  nav .left-nav {
+    gap: 16px;
+  }
+
+  nav .left-nav a img {
+    height: 30px;
+  }
+
+  nav .right-nav a {
+    display: none;
+  }
+
+  nav .right-nav .icon {
+    display: block;
+    background-color: transparent;
+    padding: 0px;
+    text-align: center;
+    margin-top: 5px;
+    &:hover {
+      color: transparent;
+    }
+  }
+
+  nav .right-nav .icon:hover {
+    color: black;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  .form-container {
+    max-width: fit-content;
+    margin: 30px;
+  }
+}

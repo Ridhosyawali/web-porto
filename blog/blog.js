@@ -39,20 +39,21 @@ function renderBlog() {
   //   dibawah ini ada proses looping setiap data di Array(blogs) dan tampilkan dalam bentuk html
   for (let i = 0; i < blogs.length; i++) {
     contentContainer.innerHTML += `
-        <div id="contents" class="blog-list">
+      <div id="contents" class="blog-list">
         <div class="blog-list-item">
           <div class="blog-image">
             <img src="${blogs[i].image}" alt="image" />
           </div>
-        <div class="blog-content">
-          <h1>${blogs[i].title}</h1>
-          <span class="detail-blog-content">
-            ${blogs[i].postAt} | ${blogs[i].author}
-          </span>
-          <p>
-            ${blogs[i].content}
-          </p>
-        </div></div>
+          <div class="blog-content">
+            <h1>${blogs[i].title}</h1>
+            <span class="detail-blog-content">
+              ${blogs[i].postAt} | ${blogs[i].author}
+            </span>
+            <p>
+              ${blogs[i].content}
+            </p>
+          </div>
+        </div>
       </div>`;
   }
 }

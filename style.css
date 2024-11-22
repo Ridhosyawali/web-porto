@@ -238,18 +238,23 @@ footer span {
   .personal {
     display: flex;
     flex-direction: column;
-    padding-inline: 16px;
+    padding-inline: 10px;
     justify-content: center;
+    align-items: center;
     padding-bottom: 16px;
   }
 
   .personal .left {
     display: flex;
+    align-items: center;
     justify-content: center;
+    width: 70%;
+    height: 70%;
   }
 
   .card {
-    max-width: fit-content;
+    width: 100%;
+    height: 100%;
   }
 
   .personal .right h1,
